@@ -7,8 +7,8 @@ public class TimeFormat {
 		String formatted_hours = "" + hours;
 		String formatted_minutes ="" + minutes;
 
-		//while(hours<=23 && hours>=0 && minutes>=0 && minutes<=59){
-			if(hours == 0 ){
+if (hours >= 0 && hours <= 23 && minutes >= 0 && minutes <= 59) {			
+	if(hours == 0 ){
 				hours = 12;
 				ampm = "AM";}
 			else if(hours == 12){ampm= "PM";
@@ -26,4 +26,4 @@ public class TimeFormat {
 		System.out.println(formatted_hours+":"+formatted_minutes + " " + ampm);
 		}
 	}
-//}
+}
