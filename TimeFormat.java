@@ -10,8 +10,10 @@ public class TimeFormat {
 		//while(hours<=23 && hours>=0 && minutes>=0 && minutes<=59){
 			if(hours == 0 ){
 				hours = 12;
-				ampm = "PM";}
-			else if(hours >= 12){ ampm= "PM";
+				ampm = "AM";}
+			else if(hours == 12){ampm= "PM";
+		}
+			else if(hours > 12){ ampm= "PM";
 			formatted_hours  = ""+ (hours - 12);
 		}
 		else{ ampm = "AM";
